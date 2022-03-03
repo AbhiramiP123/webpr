@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <button id="btn">Click Me</button>
+      <script>
+        let array1=['#00ff00','#990000','#ff0000','#ff7373','#00ffff', '#bada55','#800000','#800080','#2d3436', '#fd79a8', '#00cec9', '#00b894', '#fab1a0', '#ffeaa7'];
+        console.log("sucess");
+        
+        let i=0;
+        document.getElementById('btn').addEventListener("click",
+        function(){
+          i=i; i < array1.length ? ++i : 0;
+          document.body.style.background=array1[i];         
+        })
+       </script>
+</body>
+</html>
